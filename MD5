@@ -1,0 +1,16 @@
+ddca8b505ac702018f98f69c31c3cc81 *DESCRIPTION
+6de8dcb8c469af81e37b53adf9257df3 *LICENSE
+886cbe77b8dde6cf012ac1939628c439 *NAMESPACE
+218903c2282b682c5ad0556a1c9a99a6 *NEWS.md
+f0e597eb1b2dc98323d5f3e1edf04a9d *R/check_missing.R
+1f8c4e74cc8efb64ffd902c74f804dd6 *R/grp_routine.R
+18e105be47f71fe41c877057c56b535f *R/imports.R
+11c681f22330f16214bf9a7148118edd *R/pct_routine.R
+803ceb39ed5b06f382dd0acd22d23ae1 *R/utilities.R
+9e90d446cae0de1a38b9fd5d9b943b66 *README.md
+527dfaac5455b019d7bb224d1b1bd0f9 *man/check_missing.Rd
+86f895b51a1e8beb9a99edb55f814229 *man/common_params.Rd
+dcd78e965b7a0f985299894d1b7faf9d *man/grp_routine.Rd
+ca828e80d8e3877264b3332ff21fffc4 *man/ind_to_char.Rd
+5de5e678b5f526e3468584e838c9a9f4 *man/pct_routine.Rd
+680a08b70c05d00634277f20c9f986c6 *man/reexports.Rd
