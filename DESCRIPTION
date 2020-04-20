@@ -1,7 +1,7 @@
 Package: extdplyr
 Type: Package
 Title: Data Manipulation Extensions of 'Dplyr' and 'Tidyr'
-Version: 0.1.4
+Version: 0.1.5
 Authors@R: person("Yuchen", "Wang", email = "ycwang0712@gmail.com",
     role = c("aut", "cre"))
 Description: If 'dplyr' is a grammar for data manipulation, 'extdplyr' is like
@@ -13,11 +13,11 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Imports: dplyr, tidyr, lazyeval
-RoxygenNote: 6.0.1
+RoxygenNote: 7.1.0
 Suggests: testthat, data.table
 NeedsCompilation: no
-Packaged: 2017-02-27 05:58:54 UTC; yuchen
+Packaged: 2020-04-20 02:05:44 UTC; yuchen
 Author: Yuchen Wang [aut, cre]
 Maintainer: Yuchen Wang <ycwang0712@gmail.com>
 Repository: CRAN
-Date/Publication: 2017-02-27 08:15:28
+Date/Publication: 2020-04-20 05:20:02 UTC

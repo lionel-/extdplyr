@@ -12,9 +12,7 @@ check_missing_(data, ..., .dots, ret_prop = TRUE)
 \arguments{
 \item{data}{A \code{\link[base]{data.frame}} or \code{\link[dplyr]{tbl}}.}
 
-\item{...}{Comma separated list of unquoted expressions. You can treat
-variable names like they are positions. Use positive values to select
-variables; use negative values to drop variables.}
+\item{...}{Pass to tidyselect. See [dplyr::dplyr_tidy_select] for details.}
 
 \item{ret_prop}{Whether to return the rate of missing (default) or counts.}
 

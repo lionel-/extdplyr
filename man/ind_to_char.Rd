@@ -5,11 +5,25 @@
 \alias{ind_to_char_}
 \title{Convert indicator data.frame to character/factor.}
 \usage{
-ind_to_char(data, col, ..., ret_factor = FALSE, remove = TRUE,
-  mutually_exclusive = TRUE, collectively_exhaustive = TRUE)
+ind_to_char(
+  data,
+  col,
+  ...,
+  ret_factor = FALSE,
+  remove = TRUE,
+  mutually_exclusive = TRUE,
+  collectively_exhaustive = TRUE
+)
 
-ind_to_char_(data, col, from, ret_factor = FALSE, remove = TRUE,
-  mutually_exclusive = TRUE, collectively_exhaustive = TRUE)
+ind_to_char_(
+  data,
+  col,
+  from,
+  ret_factor = FALSE,
+  remove = TRUE,
+  mutually_exclusive = TRUE,
+  collectively_exhaustive = TRUE
+)
 }
 \arguments{
 \item{data}{A \code{\link[base]{data.frame}} or \code{\link[dplyr]{tbl}}.}
@@ -24,7 +38,7 @@ options, see the \code{\link[dplyr]{select}} documentation.}
 
 \item{ret_factor}{Whether to convert the column into factor.}
 
-\item{remove}{If \code{TRUE}, remove input columns from output data frame.}
+\item{remove}{If \code{TRUE}, remove input column from output data frame.}
 
 \item{mutually_exclusive}{Check if the indicators are mutually exclusive.}
 
@@ -35,7 +49,7 @@ exhaustive.}
 }
 \description{
 This is the reverse operation of using \code{\link[stats]{model.matrix}} a
-factor. \code{ind_to_char} works like \code{dplyr::unite}, it combines
+factor. \code{ind_to_char} works like \code{tidyr::unite}, it combines
 multiple indicator columns into one character/factor column and add it to
 the data.
 }

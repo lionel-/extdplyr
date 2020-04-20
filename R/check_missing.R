@@ -6,7 +6,7 @@
 #'
 #'
 #' @inheritParams common_params
-#' @inheritParams dplyr::select
+#' @param ... Pass to tidyselect. See [dplyr::dplyr_tidy_select] for details.
 #' @param ret_prop Whether to return the rate of missing (default) or counts.
 #'
 #' @author Min Ma
@@ -16,6 +16,7 @@ check_missing <- function(data, ..., ret_prop = TRUE) {
                  ret_prop = ret_prop)
 }
 
+#' @importFrom dplyr n
 #' @describeIn check_missing SE version of check_missing.
 #' @export
 check_missing_ <- function(data, ..., .dots, ret_prop = TRUE) {
