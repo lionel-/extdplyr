@@ -56,7 +56,7 @@ ind_to_char <- function(data, col, ..., ret_factor = FALSE, remove = TRUE,
                         mutually_exclusive = TRUE,
                         collectively_exhaustive = TRUE) {
   col <- deparse(substitute(col))
-  from <- dplyr::select_vars(colnames(data), ...)
+  from <- names(dplyr::select(data, ...))
   ind_to_char_(data, col, from, ret_factor = ret_factor, remove = remove,
                mutually_exclusive = mutually_exclusive,
                collectively_exhaustive = collectively_exhaustive)

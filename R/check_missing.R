@@ -12,22 +12,18 @@
 #' @author Min Ma
 #' @export
 check_missing <- function(data, ..., ret_prop = TRUE) {
-  check_missing_(data, .dots = lazyeval::lazy_dots(...),
-                 ret_prop = ret_prop)
+  if (ret_prop) {
+    fun <- function(x) sum(is.na(x)) / n()
+  } else {
+    fun <- function(x) sum(is.na(x))
+  }
+
+  dplyr::summarise(data, dplyr::across(c(...), fun))
 }
 
 #' @importFrom dplyr n
 #' @describeIn check_missing SE version of check_missing.
 #' @export
 check_missing_ <- function(data, ..., .dots, ret_prop = TRUE) {
-  dots <- lazyeval::all_dots(.dots, ...)
-  vars <- dplyr::select_vars_(names(data), dots)
-
-  if (ret_prop) {
-    fun <- dplyr::funs_(quote(sum(is.na(.)) / n()))
-  } else {
-    fun <- dplyr::funs_(quote(sum(is.na(.))))
-  }
-
-  dplyr::summarise_at(data, .cols = vars, .funs = fun)
+  .Defunct("check_missing")
 }
